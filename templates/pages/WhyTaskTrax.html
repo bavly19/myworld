@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="CSS/WebStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+        <title>Why TASKTRAX</title>
+    </head>
+
+    <body>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <img class="icon" src="{% static 'Images/Icon.png'%}" alt="image not found" width="35px">
+                    <b>TASKTRAX</b>
+                    <li><a href="{% url 'LogIn'%}">Log In</a></li>
+                    <li><a href="{% url 'ContactUs'%}">Contact Us</a></li>
+                    <li><a href="{% url 'AboutUs' %}">About Us</a></li>
+                    <li><a href="{% url 'WhyTaskTrax' %}">Why TASKTRAX</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="wabody">
+            <h1>Why <b>TASKTRAX</b></h1>
+
+            <p>
+                <b>Tailored for Educators:</b>
+                Our platform is specifically designed for teachers and administrators.
+                We understand the unique needs of educational institutions,
+                and our features are customized to streamline task assignment, tracking, and completion within this context.
+            </p>
+
+            <br>
+            <p>
+                <b>Efficiency and Transparency:</b>
+                Our website ensures efficient communication between administrators and teachers.
+                Assignments are clearly defined, deadlines are visible, and progress can be tracked in real time.
+                This transparency fosters accountability and reduces administrative overhead.
+            </p>
+
+            <br>
+            <p>
+                <b>User-Friendly Interface:</b>
+                We prioritize simplicity and ease of use. Teachers can quickly access their tasks,
+                view relevant details, and mark them as complete. 
+                Our intuitive interface minimizes the learning curve,
+                allowing educators to focus on teaching rather than navigating complex systems.
+            </p>
+
+            <br>
+            <p>
+                <b>Task Prioritization:</b>
+                Administrators can assign tasks with priority levels, ensuring that urgent matters receive immediate attention.
+                Teachers can organize their workload effectively, addressing critical tasks first.
+            </p>
+
+            <br>
+            <p>
+                <b>Secure and Confidential:</b>
+                We prioritize data security. Confidential information related to students, curriculum,
+                or assessments remains protected.
+                Our website adheres to privacy standards, safeguarding sensitive data.
+            </p>
+
+            <br>
+            <p>
+                <b>Responsive Support:</b>
+                Our customer support team is dedicated to assisting users promptly.
+                Whether it is technical issues, clarifications, or feedback, we are here to help.
+            </p>
+        </div>
+        <script src="{% static 'JS/Index.js' %}"></script>
+    </body>
+</html>
+{% endblock content %}

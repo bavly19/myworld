@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/WebStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <img class="icon" src="{% static 'Images/Icon.png'%}" alt="image not found" width="35px">
+                    <b>TASKTRAX</b>
+                    <li><a href="{% url 'LogIn'%}">Log In</a></li>
+                    <li><a href="{% url 'ContactUs'%}">Contact Us</a></li>
+                    <li><a href="{% url 'AboutUs' %}">About Us</a></li>
+                    <li><a href="{% url 'WhyTaskTrax' %}">Why TASKTRAX</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <div class="welcomeaccount">
+                <h1 id="teacherNameWelcome">Welcome <span id="wt"></span></h1>
+
+                <script>
+                    document.getElementById("wt").innerHTML=localStorage.getItem("tName");
+                </script>
+            </div>
+
+            <div class="tasks">
+                <a href="{% url 'ViewTeacherTasks.html' %}" title="View Tasks">
+                    <figure>
+                        <img src="{% static 'Images/ViewTasksPhoto.png' %}" alt="image not found">
+                        <figcaption>
+                            <a href="{% url 'ViewTeacherTasks.html' %}">View Tasks</a>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <script src="{% static 'JS/Index.js' %}"></script>
+    </body>
+</html>
+{% endblock content %}

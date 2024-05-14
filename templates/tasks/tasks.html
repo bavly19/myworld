@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for x in task %}
+
+<h1>
+    {{ x.title }}
+</h1>
+<h2>
+    {{ x.description }}
+</h2>
+
+{% endfor %}
+
+
+{% endblock content %}

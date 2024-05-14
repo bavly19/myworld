@@ -1,0 +1,805 @@
+body
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+}
+
+    .navbar ul 
+    {
+        list-style-type: none;
+        background-color: rgb(2, 41, 37);
+        padding: 0px;
+        margin: 0px;
+        border-color: rgb(2, 41, 37);
+        overflow: hidden;
+    }
+
+    .navbar a 
+    {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        font-family: sans-serif;
+        font-size: 22px;
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar a:hover 
+    {
+        background-color: white;
+        color: rgb(2, 41, 37);
+        text-decoration-style: double;
+    }
+
+    .navbar li 
+    {
+        float: right;
+    }
+
+    .navbar b 
+    {
+        color: white;
+        position: relative;
+        top: -5px;
+        font-size: 37px;
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .icon 
+    {
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+
+
+.welcome 
+{
+    background-image: url(../Images/HomeBackground.png);
+    background-size: cover;
+    font-family: sans-serif;
+    color: rgb(51, 51, 51);
+    padding: 30px;
+    margin-bottom: -16px;
+    margin-top: 55.5px;
+}
+
+    .welcome b 
+    {
+        font-size: 40px;
+    }
+
+    .welcome p
+    {
+        font-size: 27px;
+    }
+
+    .account
+    {
+        display: flex;
+        justify-content: space-between; 
+        max-width: 700px; 
+    }
+
+    .account div
+    {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .account label
+    {
+        position: relative;
+        left: 13px;
+    }
+
+    .account a
+    {
+        text-decoration: none;
+        color: rgb(51, 51, 51);
+        background-color: rgb(204, 192, 179);
+        border: 2px solid rgb(51, 51, 51);
+        padding: 8px;
+        border-radius: 5px;
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .account a:hover
+    {
+        background-color: rgb(51, 51, 51);
+        color: rgb(216, 200, 184);
+    }
+  
+
+
+.afterwelcome
+{
+    background-color: rgb(2, 41, 37);
+    background-size: cover;
+    margin-bottom: -16px;
+    color: white;
+    padding: 30px;
+}
+
+    .afterwelcome h2
+    {
+        font-family: sans-serif;
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .afterwelcome h2 b
+    {
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+    }
+
+    .afterwelcome p
+    {
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .afterwelcome p b
+    {
+        font-size: 23px;
+        color: rgb(151, 175, 156);
+    }
+
+
+
+.formbody
+{
+    padding: 100px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/FormBackground.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 55.5px;
+}
+
+    .formwrapper 
+    {
+        width: 420px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        color: rgb(2, 41, 37);
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+
+    .formwrapper h1
+    {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .formwrapper .inputbox
+    {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+    .inputbox input
+    {
+        width: 350px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        border-radius: 40px;
+        font-size: 16px;
+        color: rgb(2, 41, 37);
+        padding: 15px 45px 15px 20px;
+    }
+
+    .inputbox input::placeholder
+    {
+        color: rgb(2, 41, 37);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .inputbox i 
+    {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: rgb(2, 41, 37);
+    }
+
+    .formwrapper .rad
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .rad input
+    {
+        transform: scale(1.2);
+        margin-right: 0px;
+        position: relative;
+        top: 1.5px;
+        accent-color: rgb(2, 41, 37);
+    }
+
+    .formwrapper .check
+    {
+        display: flex;
+        font-size: 14.5px;
+        margin: -15px 0px 30px 15px;
+    }
+
+    .check input
+    {
+        accent-color: rgb(2, 41, 37);
+        margin-right: 3px;
+    }
+
+    .formwrapper .btn
+    {
+        width: 100%;
+        height: 45px;
+        background: rgb(2, 41, 37);
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .formwrapper .btn:hover
+    {
+        background: white;
+        color: rgb(2, 41, 37);
+    }
+
+    .formwrapper .formlink
+    {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+
+    .formlink a
+    {
+        color: rgb(2, 41, 37);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .formlink a:hover
+    {
+        text-decoration: underline;
+    }
+
+
+
+.welcomeaccount 
+{
+    background-image: url(../Images/AccountBackground.png);
+    background-size: cover;
+    height: 576px;
+    position: relative;
+    background-position: center;
+    margin-top: 55.5px;
+}
+
+    .welcomeaccount h1
+    {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: sans-serif;
+        font-size: 65px;
+        color: rgb(151, 175, 156);
+        text-shadow: 0px 0px 30px gray, 0px 0px 25px black, 0px 0px 20px black, 0px 0px 15px black, 0px 0px 10px black;
+    }
+
+
+
+.tasks
+{
+    background-color: rgb(2, 41, 37);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+    .tasks img
+    {
+        filter: invert(1);
+        width: 200px;
+    }
+
+    .tasks figcaption
+    {
+        margin-left: 25px;
+        margin-top: 8px;
+    }
+
+    .tasks figcaption a
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+
+
+
+.acformbody
+{
+    padding: 100px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/BluredBackground.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 55.5px;
+}
+
+    .acformwrapper 
+    {
+        width: 600px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        color: rgb(2, 41, 37);
+        border-radius: 10px;
+        padding: 20px 40px;
+    }
+
+    .acformwrapper h1
+    {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .acformwrapper .acinputbox1
+    {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+    .acinputbox1 input
+    {
+        width: 229.5px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        border-radius: 40px;
+        font-size: 16px;
+        color: rgb(2, 41, 37);
+        padding: 15px 45px 15px 20px;
+    }
+
+    .acinputbox1 input::placeholder
+    {
+        color: rgb(2, 41, 37);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .acinputbox1 i 
+    {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: rgb(2, 41, 37);
+    }
+
+    .acformwrapper .acinputbox2
+    {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+    .acinputbox2 input
+    {
+        width: 532px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        border-radius: 40px;
+        font-size: 16px;
+        color: rgb(2, 41, 37);
+        padding: 15px 45px 15px 20px;
+    }
+
+    .acinputbox2 input::placeholder
+    {
+        color: rgb(2, 41, 37);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .acinputbox2 i 
+    {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: rgb(2, 41, 37);
+    }
+
+    .acformwrapper .acrad
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .acrad input
+    {
+        transform: scale(1.2);
+        margin-right: 0px;
+        margin-left: 30px;
+        position: relative;
+        top: 1.5px;
+        accent-color: rgb(2, 41, 37);
+    }
+
+    .acformwrapper .actextarea
+    {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin: 30px 0;
+    }
+
+    .actextarea textarea
+    {
+        width: 532px;
+        height: 117px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        border-radius: 15px;
+        font-size: 16px;
+        color: rgb(2, 41, 37);
+        padding: 15px 45px 15px 20px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .actextarea textarea::placeholder
+    {
+        color: rgb(2, 41, 37);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .acbtn button
+    {
+        width: 297.8px;
+        height: 45px;
+        margin-bottom: 30px;
+        background: rgb(2, 41, 37);
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .acbtn button:hover
+    {
+        background: white;
+        color: rgb(2, 41, 37);
+    }
+
+
+
+.wabody
+{
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url(../Images/BluredBackground.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 55.5px;
+}
+
+    .wabody h1
+    {
+        text-align: center;
+        font-size: 36px;
+        color: rgb(2, 41, 37);
+    }
+
+    .wabody h1 b
+    {
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 41px;
+    }
+
+    .wabody p
+    {
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-top: 15px;
+        color: rgb(223, 221, 221);
+        text-shadow: 0 0 10px black;
+    }
+
+    .wabody p b
+    {
+        font-size: 23px;
+        color: rgb(2, 41, 37);
+        text-shadow: none;
+    }
+
+    .wabody a
+    {
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-top: 15px;
+        color: rgb(223, 221, 221);
+        text-shadow: 0 0 10px black;
+        text-decoration: none;
+    }
+
+
+
+.tablebody
+{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 687px;
+    background-image: url(../Images/BluredBackground.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 55.5px;
+}
+
+    .tablewrapper
+    {
+        width: 900px;
+        height: 550px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .tablecontent table, th, td
+    {
+        border-collapse: collapse;
+        padding: 16px;
+        text-align: center;
+        color: rgb(2, 41, 37);
+    }
+
+    .tabletitle
+    {
+        width: 96.5%;
+        height: 11%;
+        background: rgba(255, 255, 255, 0.33);
+        color: rgb(2, 41, 37);
+        display: flex;
+        padding: 0px 16px;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    .tabletitle h1
+    {
+        font-size: 36px;
+    }
+
+    .tabletitle .searchbar
+    {
+        width: 35%;
+        height: 15%;
+        background: rgba(255, 255, 255, 0.33);
+        padding: 12.8px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        overflow: visible;
+    }
+
+    .searchbar:hover
+    {
+        width: 45%;
+        background: rgba(255, 255, 255, 0.53);
+        box-shadow: 0 1.6px 6.4px rgba(0, 0, 0, 0.13);
+    }
+
+    .searchbar input
+    {
+        width: 100%;
+        padding: 8px 4.8px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: rgb(2, 41, 37);
+        font-size: 16px;
+    }
+
+    .searchbar input::-webkit-search-cancel-button 
+    {
+        -webkit-appearance: none;
+    }
+
+    .searchbar i
+    {
+        font-size: 22px;   
+        cursor: pointer;
+    }
+
+    .tabletitle .filter
+    {
+        position: absolute;
+        z-index: 999;
+        top: 61px;
+        left: 742px;
+        width: 142px;
+        height: 0px;
+        overflow: hidden;
+        border-radius: 15px;
+        background: rgb(194, 207, 197);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transition: height 0.5s;
+    }
+
+    .filter select
+    {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-radius: 15px;
+    }
+
+    .filter select optgroup
+    {
+        background: rgb(194, 207, 197);
+        padding-top: 9px;
+        color: rgb(2, 41, 37);
+        font-size: 16px;
+    }
+
+    .filter select option
+    {
+        background: rgb(217, 219, 219);
+        height: 22px;
+        padding-top: 7px;
+    }
+
+    .filter select .first
+    {
+        margin-top: 7px;        
+    }
+
+    .filter select .selected
+    {
+        background: rgb(217, 219, 219);
+        font-weight: bold;
+        color: rgb(2, 41, 37);
+        font-size: 16px;
+        padding-bottom: 2px;
+        padding-left: 12px;
+        padding-bottom: 3px;
+    }
+
+    .filter select::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    .tablecontent
+    {
+        width: 96.6%;
+        max-height: 83.6%;
+        background: rgba(255, 255, 255, 0.7);
+        margin: 16px auto;
+        border-radius: 8px;
+        overflow: auto;
+    }
+
+    .tablecontent::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    .tablecontent table
+    {
+        width: 100%;
+    }
+
+    .tablecontent th
+    {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: rgb(194, 207, 197);
+        z-index: 1;
+
+    }
+
+    .tablecontent tr:nth-child(even)
+    {
+        background: rgba(151, 175, 156, 0.15);
+    }
+
+    .tablecontent tr:hover
+    {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    .tablecontent .tablebtns
+    {
+        font-size: 20px;
+        width: 51px;
+        padding-right: 0;
+    }
+
+    .tablebtns input
+    {
+        margin-right: 16px;
+        accent-color: rgb(2, 41, 37);
+        transform: scale(1.3);       
+    }

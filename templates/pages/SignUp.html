@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/WebStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <title>Sign Up</title>
+    </head>
+
+    <body>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <img class="icon" src="{% static 'Images/Icon.png'%}" alt="image not found" width="35px">
+                    <b>TASKTRAX</b>
+                    <li><a href="{% url 'LogIn'%}">Log In</a></li>
+                    <li><a href="{% url 'ContactUs'%}">Contact Us</a></li>
+                    <li><a href="{% url 'AboutUs' %}">About Us</a></li>
+                    <li><a href="{% url 'WhyTaskTrax' %}">Why TASKTRAX</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="formbody">
+            <div class="formwrapper">
+                <form action="" method="POST" onsubmit="SignUp(event)">
+                    <h1>Sign Up</h1>
+
+                    <div class="inputbox">
+                        <input type="text" required placeholder="Username" name="username" id="username">
+                        <i class="bx bxs-user"></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="email" required placeholder="Email" name="email" id="email">
+                        <i class="bx bxs-envelope"></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="password" required placeholder="Enter password 8-16" minlength="8" maxlength="16" name="password" id="password">
+                        <i class="bx bxs-lock-alt"></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="password" required placeholder="Confirm password" minlength="8" maxlength="16" name="confirm password" id="confirmPassword">
+                        <i class="bx bxs-lock-alt"></i>
+                    </div>
+
+                    <div class="rad">
+                        <input id="ad" type="radio" required name="type" value="admin">
+                        <label for="ad" style="margin-right: 50px;">Admin</label>
+
+                        <input id="teach" type="radio" required name="type" value="teacher">
+                        <label for="teach">Teacher</label>
+                    </div>
+
+                    <button class="btn" type="submit">Sign up</button>
+
+                    <div class="formlink">
+                        <label>Already have an account?</label>
+                        <a href="LogIn.html">Log In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="{% static 'JS/Index.js' %}"></script>
+    </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/WebStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+        <title>TASKTRAX</title>
+    </head>
+
+    <body>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <img class="icon" src="{% static 'Images/Icon.png'%}" alt="image not found" width="35px">
+                    <b>TASKTRAX</b>
+                    <li><a href="{% url 'LogIn'%}">Log In</a></li>
+                    <li><a href="{% url 'ContactUs'%}">Contact Us</a></li>
+                    <li><a href="{% url 'AboutUs' %}">About Us</a></li>
+                    <li><a href="{% url 'WhyTaskTrax' %}">Why TASKTRAX</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="welcome">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <b>Streamline Your Classroom Workflow</b>
+            <p>Organize tasks for teachers and administrators</p>
+            <br><br><br><br><br>
+
+            <div class="account">
+                <div>
+                    <label>Want to create an account?</label>
+                    <a href="SignUp.html">Sign Up</a>
+                </div>
+
+                <div>
+                    <label>Already have an account?</label>
+                    <a href="LogIn.html">Log In</a>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+        <div class="afterwelcome">
+            <h2>Welcome to <b>TASKTRAX</b></h2>
+            <p><i>This platform simplifies communication and task management between teachers and administrators</i></p>
+            <br>
+
+            <p><b>For Administrators:</b>
+                <br>
+                Easily assign tasks to teachers, set priorities and ensure a smooth learning enviroment
+            </p>
+
+            <p><b>For Teachers:</b>
+                <br>
+                Have the clearest vision of your assigned tasks, determine your priorities and have a clear progress tracking
+            </p>
+        </div>
+        <script src="{% static 'JS/Index.js' %}"></script>
+    </body>
+</html>
+ 
+
+
+{% endblock content %}

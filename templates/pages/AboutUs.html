@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="CSS/WebStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+        <title>About Us</title>
+    </head>
+
+    <body>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <img class="icon" src="{% static 'Images/Icon.png'%}" alt="image not found" width="35px">
+                    <b>TASKTRAX</b>
+                    <li><a href="{% url 'LogIn'%}">Log In</a></li>
+                    <li><a href="{% url 'ContactUs'%}">Contact Us</a></li>
+                    <li><a href="{% url 'AboutUs' %}">About Us</a></li>
+                    <li><a href="{% url 'WhyTaskTrax' %}">Why TASKTRAX</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="wabody">
+            <h1>About Us</h1>
+
+            <p><b>Team leader: </b>Rawan Ahmed Hassan</p>
+            <p><b>ID: </b>20221061</p>
+            <p>
+                <b>Email:</b>
+                <a href="mailto:rawanahassan@gmail.com">rawanalnagary@gmail.com</a>
+            </p>
+
+            <br>
+            <p><b>Team member: </b>Alshimaa Mohamed Abdo</p>
+            <p><b>ID: </b>20220067</p>
+            <p>
+                <b>Email:</b>
+                <a href="mailto:mshmsh1582004@gmail.com">mshmsh1582004@gmail.com</a>
+            </p>
+
+            <br>
+            <p><b>Team member: </b>George Sherif Nabil</p>
+            <p><b>ID: </b>20220098</p>
+            <p>
+                <b>Email:</b>
+                <a href="mailto:georgesheruf1234@gmail.com">georgesheruf1234@gmail.com</a>
+            </p>
+
+            <br>
+            <p><b>Team member: </b>Bavly Soliman Habashy</p>
+            <p><b>ID: </b>20220080</p>
+            <p>
+                <b>Email:</b>
+                <a href="mailto:bavlysoliman117@gmail.com">bavlysoliman117@gmail.com</a>
+            </p>
+        </div>
+        <script src="{% static 'JS/Index.js' %}"></script>
+    </body>
+</html>
+{% endblock content %}
